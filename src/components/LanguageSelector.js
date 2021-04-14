@@ -1,7 +1,10 @@
 import React from 'react'
+import LanguageContext from '../contexts/LanguageContext'
 
 class LanguageSelector extends React.Component {
+  static contextType = LanguageContext
   render() {
+    console.log(LanguageContext)
     return (
       <div>
         Select a language:
