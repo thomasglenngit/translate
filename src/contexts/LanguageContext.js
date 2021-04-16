@@ -2,7 +2,7 @@ import React from 'react'
 
 const Context = React.createContext('english')
 
-export class LanguageStore extends React.Component {
+export class LanguageStore extends React.Component {//Named export value req. {} in import 
   state = { language: 'english'}
 
   onLanguageChange = language => {
